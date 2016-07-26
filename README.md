@@ -80,10 +80,13 @@ const testDepartment = [
 const testQueryData = {
     startTime: '2016-08-04',
     endTime: '', // nullable
-    departmentName: '部门2', // 部门名称
-    groupName: '', // nullable  班组名称
-    page: '1',  // 当前页
-    pageNum: '10'  //  每页数量
+    departmentId: 2, // 部门Id
+    groupId: -1, //   班组Id  (groupId < 0 则不限制班组)
+    page: {
+        currentPage: 1, // 当前页
+        showCount: 10, // 每页数量
+        totalPage: 1 // 一共页数
+    },  
 }
 ```
 
@@ -91,7 +94,9 @@ const testQueryData = {
 
 ```
 const testCsInfo = {
-    totalCount: 123,
+    flag: true, // true为查询成功  false失败
+    totalCount: 2, // 返回查询结果条数
+    totalPage: 1, // 返回查询结果页数
     info: [
         {
             department: {
