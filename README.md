@@ -82,6 +82,7 @@ const testQueryData = {
     endTime: '', // nullable
     departmentId: 2, // 部门Id
     groupId: -1, //   班组Id  (groupId < 0 则不限制班组)
+    isDel: -1, // 启用状态 -1 为不限制启用状态，  0:待用,1:停用,2:使用中,3:所选班制已停用
     page: {
         currentPage: 1, // 当前页
         showCount: 10, // 每页数量
