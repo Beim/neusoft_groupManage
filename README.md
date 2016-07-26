@@ -1,10 +1,11 @@
 # neusoft_groupManage
 
-get
-param null
-return testDepartment
+##get
 
+- param null
+- return testDepartment
 
+```
 const testDepartment = [
     {
         // 部门编号
@@ -64,3 +65,4 @@ const testDepartment = [
         ]
     }
 ]
+```
