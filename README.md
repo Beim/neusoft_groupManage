@@ -90,42 +90,45 @@ const testQueryData = {
 ----------------------------
 
 ```
-const testCsInfo = [
-    {
-        department: {
-            departmentId: 1,
-            departmentName: '部门1'
+const testCsInfo = {
+    totalCount: 123,
+    info: [
+        {
+            department: {
+                departmentId: 1,
+                departmentName: '部门1'
+            },
+            group: {
+                groupId: 1,
+                groupName: '班组1'
+            },
+            classSystem: {
+                classSystemId: 1,
+                classSystemName: '三班倒'
+            },
+            time: {
+                startTime: '2016-08-03',
+                endTime: '2016-09-03'
+            }
         },
-        group: {
-            groupId: 1,
-            groupName: '班组1'
-        },
-        classSystem: {
-            classSystemId: 1,
-            classSystemName: '三班倒'
-        },
-        time: {
-            startTime: '2016-08-03',
-            endTime: '2016-09-03'
+        {
+            department: {
+                departmentId: 2,
+                departmentName: '部门2'
+            },
+            group: {
+                groupId: 2,
+                groupName: '班组2'
+            },
+            classSystem: {
+                classSystemId: 3,
+                classSystemName: '四班倒'
+            },
+            time: {
+                startTime: '2016-08-15',
+                endTime: '2016-09-15'
+            }
         }
-    },
-    {
-        department: {
-            departmentId: 2,
-            departmentName: '部门2'
-        },
-        group: {
-            groupId: 2,
-            groupName: '班组2'
-        },
-        classSystem: {
-            classSystemId: 3,
-            classSystemName: '四班倒'
-        },
-        time: {
-            startTime: '2016-08-15',
-            endTime: '2016-09-15'
-        }
-    }
-]
+    ]
+}
 ```
