@@ -78,11 +78,11 @@ const testDepartment = [
 
 ```
 const testQueryData = {
-    startTime: '2016-08-04',
-    endTime: '', // nullable
+    start_time: '2016-08-04',
+    end_time: '', // nullable
     departmentId: 2, // 部门Id
-    groupId: -1, //   班组Id  (groupId < 0 则不限制班组)
-    isDel: -1, // 启用状态 -1 为不限制启用状态，  0:待用,1:停用,2:使用中,3:所选班制已停用
+    group_id: -1, //   班组Id  (groupId < 0 则不限制班组)
+    is_del: -1, // 启用状态 -1 为不限制启用状态，  0:待用,1:停用,2:使用中,3:所选班制已停用
     page: {
         currentPage: 1, // 当前页
         showCount: 10, // 每页数量
