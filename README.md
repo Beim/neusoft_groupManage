@@ -2,10 +2,17 @@
 
 ##GET
 
-- 获取部门与其班组信息
+>- 获取部门与其班组信息
 - param null
 - return testDepartment  // 数组
 
+--------------------------------
+
+>- 获取可用的班制的信息
+- param null
+- return testClassSystems
+
+---------------------------------
 
 ##POST
 
@@ -152,4 +159,29 @@ const testTimeArrange = {
     start_time: '2016-07-27',
     end_time: '2016-08-27'
 }
+```
+
+----------------------------
+
+```
+const testClassSystems = [
+    {
+        cs_master_id: 1,
+        class_system_name: '班制1',
+        class_system_des: '描述1',
+        scheduling_circle: '1'，
+    },
+    {
+        cs_master_id: 2,
+        class_system_name: '班制2',
+        class_system_des: '描述3',
+        scheduling_circle: '2'，
+    },
+    {
+        cs_master_id: 3,
+        class_system_name: '班制3',
+        class_system_des: '描述3',
+        scheduling_circle: '3'，
+    }
+]
 ```
