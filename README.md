@@ -9,11 +9,11 @@
 
 ##POST
 
-- 查询排班信息
+>- 查询排班信息
 - param testQueryData
 - return testCsInfo
 
-- 获取时间范围内 符合要求的部门与其班组信息
+>- 获取时间范围内 符合要求的部门与其班组信息
 - param testTimeArrange // 对象
 - return testDepartment // 数组
 
@@ -143,6 +143,8 @@ const testCsInfo = {
     ]
 }
 ```
+-----------------------------
+
 ```
 const testTimeArrange = {
     start_time: '2016-07-27',
