@@ -4,7 +4,7 @@
 
 - 获取部门与其班组信息
 - param null
-- return testDepartment
+- return testDepartment  // 数组
 
 
 ##POST
@@ -14,8 +14,8 @@
 - return testCsInfo
 
 - 获取时间范围内 符合要求的部门与其班组信息
-- param testTimeArrange
-- return testDepartment
+- param testTimeArrange // 对象
+- return testDepartment // 数组
 
 ```
 const testDepartment = [
@@ -145,7 +145,7 @@ const testCsInfo = {
 ```
 ```
 const testTimeArrange = {
-    start_time: this.state.startTime,
-    end_time: this.state.endTime
+    start_time: '2016-07-27',
+    end_time: '2016-08-27'
 }
 ```
