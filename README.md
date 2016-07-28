@@ -223,6 +223,8 @@ const testArrangeInfo = {
 ```
 const testArrangements = {
     cs_master_id: 123, // 班制id
+    start_time: '2016-07-28',
+    end_time: '2016-08-28',
     arrangements: [
         {
             cs: 2, // 班制类型
