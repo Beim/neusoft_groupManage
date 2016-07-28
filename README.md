@@ -167,16 +167,17 @@ const testTimeArrange = {
 const testClassSystems = [
     {
         cs_master_id: 1,
+        class_system_num: 0, // 0则不限制人数
         class_system_name: '班制1',
         class_system_des: '描述1',
         scheduling_circle: '1',
         class_kind: {
-            1: '早',
-            2: '晚'
+            1: '正常'
         }
     },
     {
         cs_master_id: 2,
+        class_system_num: 0,
         class_system_name: '班制2',
         class_system_des: '描述3',
         scheduling_circle: '2',
@@ -187,12 +188,14 @@ const testClassSystems = [
     },
     {
         cs_master_id: 3,
+        class_system_num: 3,
         class_system_name: '班制3',
         class_system_des: '描述3',
         scheduling_circle: '3',
         class_kind: {
             1: '早',
-            2: '晚'
+            2: '晚',
+            '-1': '休'
         }
     }
 ]
