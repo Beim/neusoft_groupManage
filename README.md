@@ -26,6 +26,14 @@
 - param testTimeArrange // 对象
 - return testDepartment // 数组
 
+------------------------------
+
+>- 提交排班信息
+- param testArrangements
+- return testArrangeInfo
+
+------------------------------
+
 ```
 const testDepartment = [
     {
@@ -200,4 +208,27 @@ const testClassSystems = [
     }
 ]
 
+```
+
+-----------------------------------------
+
+```
+const testArrangeInfo = {
+    flag: true, // true 则查询成功 false 失败
+}
+```
+
+------------------------------
+
+```
+const testArrangements = {
+    cs_master_id: 123, // 班制id
+    arrangements: [
+        {
+            cs: 2, // 班制类型
+            departmentId: 1, // 班组所属部门id
+            groupId: 111 // 班组id
+        }
+    ]
+}
 ```
