@@ -227,9 +227,8 @@ const testArrangements = {
     end_time: '2016-08-28',
     arrangements: [
         {
-            cs: 2, // 班制类型
-            departmentId: 1, // 班组所属部门id
-            groupId: 111 // 班组id
+            class_kind: 2, // 班制类型
+            group_id: 111 // 班组id
         }
     ]
 }
