@@ -228,6 +228,7 @@ const testArrangements = {
     arrangements: [
         {
             class_kind: 2, // 班制类型
+            department_id: 1,
             group_id: 111 // 班组id
         }
     ]
