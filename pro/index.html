@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf8'/>
+    <title>班组排班管理</title>
+    <link rel="stylesheet" type="text/css" href="./build/bootstrap.css">
+    <script type="text/javascript" src='./build/jquery.js'></script>
+    <script type="text/javascript" src='./build/bootstrap.js'></script>
+    <link rel="stylesheet" type="text/css" href="./build/font-awesome.css">
+    <style type="text/css">
+        * {
+            box-sizing: border-box;
+        }        
+        body, #container{
+            width: 100%;
+            height: 100%;
+        }
+        #main {
+            margin-left: 210px;
+            margin-top: 60px;
+        }
+        .header {
+            background-color: #F5F5F5;
+            border-style: solid;
+            border-width: 0;
+            border-bottom-width: 1px;
+            padding: 8px 15px;
+            border-color: #DCDCDC;
+        }
+        .header p {
+            margin-bottom: 0;
+        }
+        .header p span {
+            margin-right: 3px;
+        }
+        .queryContainer {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .limitation {
+            margin-bottom: 40px;
+        }
+        .limitation label{
+            margin-right: 5px;
+        }
+        .limitation-limit {
+            min-width: 170px;
+            max-width: 170px;
+            display: inline;
+        }
+        .queryAndAdd{
+            /*margin-top: 50px;*/
+            display: flex;
+            justify-content: center;    
+        }
+        .queryAndAdd button {
+            margin-right: 20px;
+            font-size: 14px;
+            line-height: 1.42857;
+            padding: 6px 12px;
+            border-width: 1px;
+            border-style: solid;
+
+        }
+        .b {
+            border-radius: 0;
+            -webkit-box-shadow: 5px 5px 5px #979797;
+            box-shadow: 5px 5px 5px #979797;
+        }
+        .queryBody {
+            margin-top: 20px;
+        }
+        .event-table {
+            border-top: 3px solid #B4A5A5;
+            border-bottom: 3px solid #B4A5A5;
+        }
+        .table {
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+        table {
+            background: transparent;
+            border-collapse: collapse;
+            border-spacing: 0px;
+            white-space: normal;
+            line-height: normal;
+            font-weight: normal;
+            font-size: medium;
+            font-variant: normal;
+            font-style: normal;
+            color: -internal-quirk-inherit;
+            text-align: start;
+        }
+        .tdBtn button{
+            margin-right: 5px;
+        }
+        .queryBody{
+            margin-right: 
+        }
+        .pageDiv{
+            font-size: 16px;
+            text-align: center;
+        }
+        .pageDiv ul{
+            margin-bottom: 10px;
+        }
+        .pageDiv li{
+            display: inline;
+            margin-right: 10px;
+        }
+        .pageDiv ._btn{
+            cursor: pointer;
+        }
+        .pageDiv input{
+            width: 35px;
+        }
+        .pageSelector{
+            max-width: 35px;
+            min-width: 35px;
+            display: inline;
+        }
+        #pageWrapper {
+            position: relative;
+        }
+        #pageQuery{
+            position: absolute;
+            width: 100%;
+        }
+        #pageArrange{
+            width: 100%;
+            position: absolute;
+        }
+        .example-enter {
+          opacity: 0.01;
+          transition: opacity 0.5s ease-in;
+        }
+
+        .example-enter.example-enter-active {
+          opacity: 1;
+        }
+
+        .example-leave {
+          opacity: 1;
+          transition: opacity 0.5s ease-in;
+        }
+
+        .example-leave.example-leave-active {
+          opacity: 0.01;
+        }
+        .newArrangeContainer {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .selectCsTableWrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+        .selectCsTable {
+            max-width: 350px;
+        }
+        .selectCsTable-center {
+            padding-top: 37px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .selectCsTable-center button {
+            width: 110px;
+            margin-bottom: 14px;
+        }
+        .pagiBtnWrapper {
+            display: flex;
+            justify-content: space-between;
+            /*padding-right: 7%;*/
+            /*padding-left: 20%;*/
+            /*margin-top: 20px;*/
+            position: fixed;
+            bottom: 30px;
+            left: 480px;
+            margin: 0 auto;
+        }
+        .pagiBtnWrapper button{
+            height: 50px;
+            width: 200px;
+        }
+        .classGroupsWrapper {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .classGroupsWrapper span {
+            margin: 10px 40px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .classSystemWrapper {
+            margin-top: 30px;
+            margin-bottom: 35px;
+        }
+        .classSystemDes {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .arrangeWrapper{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .arrangeItem {
+            width: 33%;
+            margin: 20px 0;
+            padding-left: 20px;
+            display: flex;
+            flex-direction: row;
+        }
+        .arrangeItem-1 {
+            min-width: 80px;
+            font-size: 17px;
+        }
+        .arrangeItem-2 {
+            display: inline;
+            min-width: 200px;
+            max-width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id='container'></div>
+    <script type="text/javascript" src='./index.js'></script>
+</body>
+</html>
