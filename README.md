@@ -34,6 +34,12 @@
 
 ------------------------------
 
+>- 删除排班信息
+- param testDelete
+- return testDelInfo
+
+-----------------------------
+
 ```
 const testDepartment = [
     {
@@ -232,5 +238,24 @@ const testArrangements = {
             group_id: 111 // 班组id
         }
     ]
+}
+```
+
+--------------------------
+
+```
+const testDelete = {
+    groupId: 1,
+    startTime: '2016-07-15', 
+    endTime: '2016-07-28', 
+    isAll: 0
+}
+```
+
+------------------------
+
+```
+const testDelInfo = {
+    flag: true // true为删除成功， false失败
 }
 ```
