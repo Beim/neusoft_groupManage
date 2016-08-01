@@ -123,9 +123,9 @@ const testQueryData = {
 
 ```
 const testCsInfo = {
-    flag: true, // true为查询成功  false失败
-    totalCount: 2, // 返回查询结果条数
-    totalPage: 1, // 返回查询结果页数
+    flag: true,
+    totalCount: 2,
+    totalPage: 1,
     info: [
         {
             department: {
@@ -143,7 +143,8 @@ const testCsInfo = {
             time: {
                 startTime: '2016-08-03',
                 endTime: '2016-09-03'
-            }
+            },
+            isDel: 0
         },
         {
             department: {
@@ -161,7 +162,27 @@ const testCsInfo = {
             time: {
                 startTime: '2016-08-15',
                 endTime: '2016-09-15'
-            }
+            },
+            isDel: 1
+        },
+        {
+            department: {
+                departmentId: 3,
+                departmentName: '部门3'
+            },
+            group: {
+                groupId: 3,
+                groupName: '班组3'
+            },
+            classSystem: {
+                classSystemId: 3,
+                classSystemName: '四班倒'
+            },
+            time: {
+                startTime: '2016-08-15',
+                endTime: '2016-09-15'
+            },
+            isDel: 2
         }
     ]
 }
