@@ -248,7 +248,8 @@ const testDelete = {
     groupId: 1,
     startTime: '2016-07-15', 
     endTime: '2016-07-28', 
-    isAll: 0
+    isAll: 0,
+    isDel: -1 // -1 为删除记录，否则改为相应的启用状态
 }
 ```
 
